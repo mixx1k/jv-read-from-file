@@ -7,6 +7,7 @@ import java.util.ArrayList;
 
 public class FileWork {
     private static final char TARGET_LETTER = 'w';
+
     public String[] readFromFile(String fileName) {
         ArrayList<String> words = new ArrayList<>();
 
@@ -17,7 +18,7 @@ public class FileWork {
 
                 for (String word : splited) {
                     if (!word.isEmpty() && Character.toLowerCase(word.charAt(0)) == TARGET_LETTER) {
-                    words.add(word.toLowerCase());
+                        words.add(word.toLowerCase());
                     }
                 }
             }
