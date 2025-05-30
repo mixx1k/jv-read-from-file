@@ -22,7 +22,7 @@ public class FileWork {
                     }
                 }
             }
-        }  catch (IOException e) {
+        } catch (IOException e) {
             throw new RuntimeException("Can't read file", e);
         }
         words.sort(String::compareTo);
